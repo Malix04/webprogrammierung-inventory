@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Warehouses</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header>
+      <h1>Warehouses</h1>
+      <nav>
+        <a href="index.html">Info</a>
+        <a href="inventory.html">Inventory</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section>
+        <h2>Alle Warehouses</h2>
+        <ul data-warehouse-list></ul>
+      </section>
+
+      <section>
+        <h2>Neues Warehouse</h2>
+        <form data-warehouse-form>
+          <label>
+            Name
+            <input name="name" required>
+          </label>
+          <button type="submit">Anlegen</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Wichtig: Module, damit Imports funktionieren -->
+    <script type="module" src="js/warehouses.js"></script>
+  </body>
+</html>

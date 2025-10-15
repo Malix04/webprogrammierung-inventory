@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inventory</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header>
+      <h1>Inventory</h1>
+      <nav>
+        <a href="index.html">Info</a>
+        <a href="warehouses.html">Warehouses</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section>
+        <h2>Kategorien</h2>
+        <ul data-category-list></ul>
+
+        <form data-category-form>
+          <label>
+            Name
+            <input name="name" required>
+          </label>
+          <button type="submit">Kategorie anlegen</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Items</h2>
+        <ul data-item-list></ul>
+
+        <form data-item-form>
+            <label>
+                Name
+                <input name="name" required>
+            </label>
+            <label>
+                 Beschreibung
+                <input name="description" required placeholder="Kurzbeschreibung">
+            </label>
+            <label>
+                Menge
+                <input name="quantity" type="number" min="0" required>
+            </label>
+            <label>
+                Kategorie
+                <select name="categoryId" required></select>
+            </label>
+            <button type="submit">Item anlegen</button>
+        </form>
+      </section>
+    </main>
+
+    <script type="module" src="js/inventory.js"></script>
+  </body>
+</html>
